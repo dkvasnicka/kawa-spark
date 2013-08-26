@@ -1,0 +1,6 @@
+*.iml
+*.ipr
+*.iws
+*.swp
+.DS_Store
+target
