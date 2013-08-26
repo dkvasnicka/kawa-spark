@@ -1,4 +1,5 @@
 import gnu.expr.ModuleMethod;
+import gnu.lists.EmptyList;
 import gnu.mapping.Procedure;
 import gnu.mapping.Procedure2;
 import spark.Request;
@@ -27,7 +28,7 @@ public class KawaSpark {
                 }
             });
 
-            return null;
+            return EmptyList.emptyList;
         }
     };
 }
