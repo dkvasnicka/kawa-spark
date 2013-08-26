@@ -1,4 +1,9 @@
 (require KawaSpark)
+(define-alias r spark.Request)
 
 (get "/test" (lambda (req resp) "Hello, world!"))
-(get "/test2" (lambda (req resp) "Hello, world2!"))
+
+(get "/test/:name" 
+     (lambda (req resp) 
+         (string-append "Hello, " 
+                        (r:params req "name") "!")))
